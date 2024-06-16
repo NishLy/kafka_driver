@@ -83,7 +83,7 @@ func ConsumeKafkaMessage(callback func([]byte) error, topic string, config Consu
 		panic(err)
 	}
 
-	c.SubscribeTopics([]string{topic, "^aRegex.*[Tt]opic"}, nil)
+	c.SubscribeTopics([]string{topic}, nil)
 
 	// A signal handler or similar could be used to set this to false to break the loop.
 	run := true
