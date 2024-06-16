@@ -1,4 +1,4 @@
-module github.com/NishLy/kafka_driver_fix
+module github.com/NishLy/kafka_utils
 
 go 1.22.4
 
